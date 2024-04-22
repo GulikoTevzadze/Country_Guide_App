@@ -1,0 +1,133 @@
+.flag-img {
+}
+body {
+  box-sizing: border-box;
+  background-color: #55d174;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  .container {
+    width: 600px;
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 20px;
+    .search-block {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      form {
+        border: none;
+        background: none;
+        input {
+          padding: 7px;
+          border: none;
+          background-color: whitesmoke;
+          font-size: 20px;
+          outline: none;
+          border-bottom: 3px solid #55d174;
+          width: 470px;
+          color: rgb(81, 84, 84);
+        }
+      }
+      button {
+        color: whitesmoke;
+        background: none;
+        background-color: #55d174;
+        padding: 10px 20px;
+        border-radius: 20px;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+    #result {
+      margin-top: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      
+      h1 {
+        padding: 0;
+        margin: auto;
+      }
+      .flag-img {
+        width: 300px;
+        margin-bottom: 15px;
+        transform: translate(50%);
+      }
+      .result-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        span {
+          color: rgb(93, 90, 90);
+        }
+      }
+      h4{
+        color: red; 
+        font-weight: 500;
+        font-size: 24px;
+        margin: 0;
+        letter-spacing: 5px;
+      }
+    }
+  }
+}
+@media screen and (max-width:800px){
+ body{
+   .container{
+    width: 400px;
+    padding: 17px;
+    .search-block{
+      form{
+        input{
+          padding: 4px;
+          width: 280px;
+        }
+      }
+    }
+    #result{
+      .flag-img{
+        width: 200px;
+      }
+
+    }
+  }
+ }
+
+}
+@media screen and (max-width:414px){
+  body{
+    .container{
+     width: 350px;
+     padding: 10px;
+     .search-block{
+       form{
+         input{
+           padding: 4px;
+           width: 260px;
+         }
+       }
+      button{
+        padding: 7px 15px;
+        font-size: 15px;
+      }
+     }
+     #result{
+       .flag-img{
+         width: 175px;
+       }
+       h4{
+        font-size: 20px;
+        margin: 0;
+        letter-spacing: 4px;
+
+       }
+     }
+   }
+  }
+ 
+ }
+
